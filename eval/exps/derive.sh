@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CUDA_VISIBLE_DEVICES=2 python train_derived.py \
+CUDA_VISIBLE_DEVICES=0 python train_derived.py \
 -gen_bs 128 \
 -dis_bs 64 \
 --dataset cifar10 \

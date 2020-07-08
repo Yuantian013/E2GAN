@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CUDA_VISIBLE_DEVICES=1 python3 train_derived.py \
+CUDA_VISIBLE_DEVICES=0 python3 train_derived.py \
 -gen_bs 32 \
 -dis_bs 16 \
 --dataset stl10 \

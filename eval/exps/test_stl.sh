@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=2 python3 test.py \
+CUDA_VISIBLE_DEVICES=0 python3 test.py \
 --dataset stl10 \
 --img_size 48 \
 --bottom_width 6 \
