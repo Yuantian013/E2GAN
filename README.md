@@ -1,9 +1,6 @@
 # E2GAN
 Code used for [Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search](https://), ECCV 2020. 
 
-## Updates
-* Jul-13-2020: Code and pretrained weights are released.
-
 
 ### Dependencies
 ```bash
