@@ -58,7 +58,7 @@ bash exps/test.sh
 # Testing the pretrained STL Model
 bash exps/test_stl.sh
 ```
-Pre-trained models (both CIFAR and STL) are provided ([Google Drive](https://drive.google.com/drive/folders/1MGJjqsvJBxqfDLlelUarYZUfWTUOwEVt?usp=sharing)). You should put them in eval/checkpoints/ .
+Pre-trained models (both CIFAR and STL) are provided ([Google Drive](https://drive.google.com/drive/folders/1MGJjqsvJBxqfDLlelUarYZUfWTUOwEVt?usp=sharing)). You should put them in `eval/checkpoints/` .
 
 ## Citation
 Please cite our work if you find it useful.
