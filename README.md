@@ -30,7 +30,7 @@ Download the pre-calculated statistics from AutoGAN
 cd search
 bash exps/search.sh
 ```
-You can find the architectures in the log file search.log . 
+You will find the architectures in the log file `./search/search.log` after running the above script. 
 
 ## Train from scratch the discovered architecture
 To train from scratch and get the performance of your discovered architecture, run the following command (you should replace the architecture vector following "--arch" in the script with best-performing candidate architectures in the exploitation stage in search.log):
