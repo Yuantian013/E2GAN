@@ -45,8 +45,6 @@ bash exps/train_derived_stl.sh
 
 ## Test the discovered architecture reported in the paper
 
-### Test
-
 Run the following script:
 ```bash
 cd eval
