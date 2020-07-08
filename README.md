@@ -1,5 +1,5 @@
 # E2GAN
-Code used for [Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search](https://), ECCV 2020. 
+Code for [Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search](https://), ECCV 2020. 
 
 
 ### Dependencies
