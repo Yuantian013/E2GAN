@@ -25,7 +25,7 @@ Download the pre-calculated statistics from AutoGAN
 ([Google Drive](https://drive.google.com/drive/folders/1UUQVT2Zj-kW1c2FJOFIdGdlDHA3gFJJd?usp=sharing)) to `./search/fid_stat`and `./eval/fid_stat` . 
 
 
-## Run NAS for GAN search on CIFAR-10
+## Run E2GAN search on CIFAR-10
 ```bash
 cd search
 bash exps/search.sh
