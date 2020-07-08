@@ -23,20 +23,20 @@ python3 -m pip install tensorflow-gpu==1.13.1
 python3 -m pip install tqdm==4.29.1
 ```
 
-### prepare fid statistic file
+### Prepare fid statistic file
 Download the pre-calculated statistics from AutoGAN
 ([Google Drive](https://drive.google.com/drive/folders/1UUQVT2Zj-kW1c2FJOFIdGdlDHA3gFJJd?usp=sharing)) to `./search/fid_stat`and `./eval/fid_stat` . 
 
 
-## Run search on CIFAR-10
+## Run NAS for GAN search on CIFAR-10
 ```bash
 cd search
 bash exps/search.sh
 ```
-You can find the architectures found by E2GAN in the log file search.log . 
+You can find the architectures in the log file search.log . 
 
 ## Train from scratch the discovered architecture
-To train from scratch and get the performance of your discovered architecture, run the following command (you should replace the architecture vector following "--arch" in the script with candidate architectures with highest rewards in the exploitation stage in search.log):
+To train from scratch and get the performance of your discovered architecture, run the following command (you should replace the architecture vector following "--arch" in the script with candidate architectures that have highest rewards in the exploitation stage in search.log):
 
 ```bash
 cd eval
@@ -48,7 +48,7 @@ bash exps/train_derived_stl.sh
 
 ## Test the discovered architecture reported in the paper
 
-### test
+### Test
 
 Run the following script:
 ```bash
