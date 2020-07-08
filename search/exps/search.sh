@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This code works fine on my RTX2080TI with 11GB memory.
 # You may consider reducing batchsize/learning rate if you are using a GPU with smaller memory
-CUDA_VISIBLE_DEVICES=2 python3 -u search.py \
+CUDA_VISIBLE_DEVICES=0 python3 -u search.py \
 -gen_bs 128 \
 -dis_bs 64 \
 --dataset cifar10 \
@@ -29,4 +29,4 @@ CUDA_VISIBLE_DEVICES=2 python3 -u search.py \
 --max_search_iter 65 \
 --ctrl_step 30 \
 --random_seed 12345 \
---exp_name autogan_search  | tee search.log
+--exp_name e2gan_search  | tee search.log
