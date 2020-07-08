@@ -2,7 +2,7 @@
 Code used for [Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search](https://), ECCV 2020. 
 
 ## Updates
-* Jul-13-2020: Search code and pretrained weights are released.
+* Jul-13-2020: Code and pretrained weights are released.
 
 
 ### Dependencies
@@ -25,7 +25,7 @@ python3 -m pip install tqdm==4.29.1
 
 ### prepare fid statistic file
 Download the pre-calculated statistics from AutoGAN
-([Google Drive](https://drive.google.com/drive/folders/1UUQVT2Zj-kW1c2FJOFIdGdlDHA3gFJJd?usp=sharing)) to `./search/fid_stat`and ./eval/fid_stat . 
+([Google Drive](https://drive.google.com/drive/folders/1UUQVT2Zj-kW1c2FJOFIdGdlDHA3gFJJd?usp=sharing)) to `./search/fid_stat`and `./eval/fid_stat` . 
 
 
 ## Run search on CIFAR-10
