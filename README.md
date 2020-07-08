@@ -59,7 +59,7 @@ Pre-trained models (both CIFAR and STL) are provided ([Google Drive](https://dri
 ## Citation
 Please cite our work if you find it useful.
 ```bibtex
-@InProceedings{Yuan_2020_ECCV,
+@InProceedings{Tian_2020_ECCV,
 author = {Yuan Tian, Qin Wang, Zhiwu Huang, Wen Li, Dengxin Dai, Minghao Yang, Jun Wang, Olga Fink},
 title = {Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search},
 booktitle = {The European Conference on Computer Vision (ECCV)},
