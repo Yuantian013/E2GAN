@@ -19,6 +19,7 @@ python3 -m pip install tensorboardX==1.6
 python3 -m pip install tensorflow-gpu==1.13.1
 python3 -m pip install tqdm==4.29.1
 ```
+Code was tested on a RTX2080TI with 11GB RAM.
 
 ### Prepare fid statistic file
 Download the pre-calculated statistics from AutoGAN
