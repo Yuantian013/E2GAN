@@ -180,8 +180,13 @@ def main():
                                      dis_optimizer, train_loaders[layer], cur_stage, smooth=False, WARMUP=WARMUP) 
        
             # Get reward, use the jth layer output for generation. (layer 0:j), and the proposed progressive state
-            R, fid,state = get_is(args, gen_net, args.rl_num_eval_img, z_numpy=Z_NUMPY)
-            print("arch:",cur_arch, "Exploitation:", Best)
+            R, fid, state = get_is(args, gen_net, args.rl_num_eval_img, z_numpy=Z_NUMPY)
+            # Print exploitation mark, for better readability of the log.
+            If Best:
+                print("arch:",cur_arch, "Exploitation:", Best)
+            else:
+                print("arch:",cur_arch)
+            # Proxy reward of the up-to-now (0:j) architecture.
             print("update times:",updates,"step:",layer+1,"IS:",R,"FID:",fid)
             mask = 0 if layer == total_layer_num-1 else 1
             if search_iter >=0: # warm up
