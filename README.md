@@ -77,3 +77,4 @@ year = {2020}
 3. SAC code from [https://github.com/pranz24/pytorch-soft-actor-critic](https://github.com/pranz24/pytorch-soft-actor-critic).
 4. GAN training code is heavily borrowed from AutoGAN [https://github.com/TAMU-VITA/AutoGAN](https://github.com/TAMU-VITA/AutoGAN)
 
+For questions regarding the code, open an issue or contact Yuan and Qin via email {yutian, qwang} AT ethz.ch
