@@ -185,7 +185,7 @@ def main():
             If Best:
                 print("arch:",cur_arch, "Exploitation:", Best)
             else:
-                print("arch:",cur_arch)
+                print("arch:",cur_arch, "Exploring...")
             # Proxy reward of the up-to-now (0:j) architecture.
             print("update times:",updates,"step:",layer+1,"IS:",R,"FID:",fid)
             mask = 0 if layer == total_layer_num-1 else 1
