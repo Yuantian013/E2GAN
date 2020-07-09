@@ -1,6 +1,8 @@
 # E2GAN
 Code for [Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search](https://), ECCV 2020. 
 
+### Introduction
+We formulate the GAN architecture search problem as a Markov decision process (MDP) inspired by the success of Progressive GAN. This new formulation enables us to discover competitive GAN architectures on a 2080TI in 7 hours using off-policy RL. 
 
 ### Dependencies
 ```bash
@@ -20,6 +22,7 @@ python3 -m pip install tensorflow-gpu==1.13.1
 python3 -m pip install tqdm==4.29.1
 ```
 Code was tested on a RTX2080TI with 11GB RAM.
+
 
 ### Prepare fid statistic file
 Download the pre-calculated statistics from AutoGAN
