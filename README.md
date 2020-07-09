@@ -47,7 +47,7 @@ bash exps/train_derived.sh
 bash exps/train_derived_stl.sh
 ```
 
-## Test the discovered architecture reported in the paper
+## Test the architecture reported in the paper
 
 Run the following script:
 ```bash
