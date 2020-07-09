@@ -1,10 +1,10 @@
 # E2GAN
 Code for [Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search](https://), ECCV 2020. 
 
-### Introduction
+## Introduction
 We formulate the GAN architecture search problem as a Markov decision process (MDP) inspired by the success of Progressive GAN. This new formulation enables us to discover competitive GAN architectures on a 2080TI in 7 hours using off-policy RL. 
 
-### Dependencies
+## Dependencies
 ```bash
 conda create --name e2ganrl python=3.6
 conda activate e2ganrl
