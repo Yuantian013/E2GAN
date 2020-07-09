@@ -154,7 +154,7 @@ def main():
             cur_stage = layer # This defines which layer to use as output, for example, if cur_stage==0, then the output will be the first layer output. Set it to 2 if you want the output of the last layer.
             action = Agent.select_action([layer, last_R,0.01*last_fid] + last_state,Best)
             arch = [action[0][0],action[0][1],action[1][0],action[1][1],action[1][2],action[2][0],action[2][1],action[2][2],action[3][0],action[3][1],action[4][0],action[4][1],action[5][0],action[5][1]]
-            print(arch)
+            # print(arch)
             # argmax to get int description of arch    
             cur_arch = [np.argmax(k) for k in action]
             # Pad the skip option 0=False (for only layer 1 and layer2, not layer0, see builing_blocks.py for why)
@@ -179,9 +179,9 @@ def main():
             dynamic_reset = train_qin(args, gen_net, dis_net, g_loss_history, d_loss_history, gen_optimizer,
                                      dis_optimizer, train_loaders[layer], cur_stage, smooth=False, WARMUP=WARMUP) 
        
-            # Get reward, use the jth layer output for generation. (layer 0:j)
-            R, fid,state = get_is(args, gen_net, args.rl_num_eval_img,z_numpy=Z_NUMPY)
-            print("arch:",cur_arch,Best)
+            # Get reward, use the jth layer output for generation. (layer 0:j), and the proposed progressive state
+            R, fid,state = get_is(args, gen_net, args.rl_num_eval_img, z_numpy=Z_NUMPY)
+            print("arch:",cur_arch, "Exploitation:", Best)
             print("update times:",updates,"step:",layer+1,"IS:",R,"FID:",fid)
             mask = 0 if layer == total_layer_num-1 else 1
             if search_iter >=0: # warm up
@@ -209,6 +209,7 @@ def main():
         outinfo['entropy']=ent_loss
         outinfo['a_loss']=policy_loss
         print("full batch",outinfo,alpha)       
+        # Clean up and start a new trajectory from scratch
         del gen_net, dis_net, gen_optimizer, dis_optimizer
         gen_net, dis_net, gen_optimizer, dis_optimizer = create_shared_gan(args, weights_init)
         print(outinfo,len(memory))
