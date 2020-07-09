@@ -75,5 +75,5 @@ year = {2020}
 1. Inception Score code from [OpenAI's Improved GAN](https://github.com/openai/improved-gan/tree/master/inception_score) (official).
 2. FID code and CIFAR-10 statistics file from [https://github.com/bioinf-jku/TTUR](https://github.com/bioinf-jku/TTUR) (official).
 3. SAC code from [https://github.com/pranz24/pytorch-soft-actor-critic](https://github.com/pranz24/pytorch-soft-actor-critic).
-4. The code is heavily borrowed from AutoGAN [https://github.com/TAMU-VITA/AutoGAN](https://github.com/TAMU-VITA/AutoGAN)
+4. GAN training code is heavily borrowed from AutoGAN [https://github.com/TAMU-VITA/AutoGAN](https://github.com/TAMU-VITA/AutoGAN)
 
