@@ -2,7 +2,7 @@
 Code for [Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search](https://), ECCV 2020. 
 
 ## Introduction
-We formulate the GAN architecture search problem as a Markov decision process (MDP) inspired by the success of Progressive GAN. This new formulation enables us to discover competitive GAN architectures on a 2080TI in 7 hours using off-policy RL. 
+We formulate the GAN architecture search problem as a Markov decision process (MDP) inspired by the success of human-designed Progressive GAN. This new formulation enables us to discover competitive GAN architectures on a 2080TI in 7 hours using off-policy RL. 
 
 ## Dependencies
 ```bash
