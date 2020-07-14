@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-# @Date    : 2019-08-15
-# @Author  : Xinyu Gong (xy_gong@tamu.edu)
-# @Link    : None
-# @Version : 0.0
+# Original code from AutoGAN: Xinyu Gong (xy_gong@tamu.edu)
+# E2GAN modified it for our purpose
+# + add progressive state representation
+
 import torch.nn as nn
 import torch
 from models_search.building_blocks_search import Cell
