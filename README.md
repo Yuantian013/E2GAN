@@ -1,8 +1,6 @@
 # E2GAN
 Code for [Off-Policy Reinforcement Learning for Efficient and Effective GAN Architecture Search](https://arxiv.org/pdf/2007.09180.pdf), ECCV 2020. 
 
-[Supplementary Material](http://www.qin.ee/wp-content/uploads/2020/07/0173-supp.pdf)
-
 ## Introduction
 We formulate the GAN architecture search problem as a Markov decision process (MDP) inspired by the success of human-designed Progressive GAN. This new formulation enables us to discover competitive GAN architectures on a single 2080TI in 7 hours using off-policy RL. 
 
@@ -72,6 +70,8 @@ month = {September},
 year = {2020}
 }
 ```
+## Supplementary material
+[PDF](http://www.qin.ee/wp-content/uploads/2020/07/0173-supp.pdf)
 
 ## Acknowledgement
 1. Inception Score code from [OpenAI's Improved GAN](https://github.com/openai/improved-gan/tree/master/inception_score) (official).
