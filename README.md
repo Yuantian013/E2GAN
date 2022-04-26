@@ -26,7 +26,7 @@ Code was tested on a RTX2080TI with 11GB RAM.
 
 ### Prepare fid statistic file
 Download the pre-calculated statistics from AutoGAN
-([Google Drive](https://drive.google.com/drive/folders/1UUQVT2Zj-kW1c2FJOFIdGdlDHA3gFJJd?usp=sharing)) to `./search/fid_stat`and `./eval/fid_stat` . 
+([Link](http://bioinf.jku.at/research/ttur)) to `./search/fid_stat`and `./eval/fid_stat` . 
 
 
 ## Run E2GAN search on CIFAR-10
