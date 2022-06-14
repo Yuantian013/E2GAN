@@ -10,6 +10,7 @@ conda create --name e2ganrl python=3.6
 conda activate e2ganrl
 
 conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.0 -c pytorch
+conda install cudnn
 
 python3 -m pip install imageio
 python3 -m pip install scipy
