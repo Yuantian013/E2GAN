@@ -182,7 +182,7 @@ def main():
             # Get reward, use the jth layer output for generation. (layer 0:j), and the proposed progressive state
             R, fid, state = get_is(args, gen_net, args.rl_num_eval_img, z_numpy=Z_NUMPY)
             # Print exploitation mark, for better readability of the log.
-            If Best:
+            if Best:
                 print("arch:",cur_arch, "Exploitation:", Best)
             else:
                 print("arch:",cur_arch, "Exploring...")
